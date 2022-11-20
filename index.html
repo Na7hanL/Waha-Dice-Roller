@@ -13,30 +13,53 @@
         <div class = "row">
             <div class = "big-column" id = "left">
                 <h1>Options</h1>
-                <div class = "row">
+                
+                <div class="row">
+                    <input type = "range" min="1" max="50" value="25" class="slider" id="bob">
+                    <span class="text" id = "numDice" style="padding-top: 10px; height: 80%;"> 25 </span>
+                </div>
+                
+                <div class = "row" style="margin-bottom: 3%;">
                     <button class = "butt" id="dX">D6</button>
                     <button class = "butt reroll strike" id="reroll">Re-roll 1's</button> 
                 </div>
 
 
-                <div class="row" style="margin-left: 10%; text-align: center; margin-top: 10%;">
-                    <div class="column text">Number of dice: </div>
-                    <div class="column" id="numHolder">
-                        <span class="text" id = "numDice"> 25 </span>
-                    </div>
-
-                    
-                </div>
                 
-
-
-                <div class="row">
-                    <input type = "range" min="1" max="50" value="25" class="slider" id="bob">
-                </div>
 
                 <div class="row">
                     <button class = "butt" id="roll">ROLL</button>
                 </div>
+
+                <h1 style="background-color: rgb(58, 57, 57); margin-bottom: 0%; padding-bottom: 5%;">D3 Output</h1>
+                <div class="row" style="background-color: rgb(58, 57, 57);">
+                    <div class = "column pads" style = "text-align: right;">
+                        <span class = "output">
+                            3's : 
+                        </span>
+                    </div>
+                    <div class= "column">
+                        <span class = result id="d3">0</span>
+                    </div>
+                    <div class = "column" style = "text-align: right;">
+                        <span class = "output">
+                            2's : 
+                        </span>
+                    </div>
+                    <div class= "column">
+                        <span class = result id="d2">0</span>
+                    </div>
+                    <div class = "column" style = "text-align: right;">
+                        <span class = "output">
+                            1's : 
+                        </span>
+                    </div>
+                    <div class= "column">
+                        <span class = result id="d1">0</span>
+                    </div>
+                </div>
+                <div class = "column" style="background-color: rgb(58, 57, 57);"></div>
+
 
             </div>
 
@@ -44,7 +67,7 @@
 
             <div class="big-column" id="right">
                 
-                <h1>Output</h1>
+                <h1>D6 Output</h1>
             
                 <div class="row">
                     <div class = "column" style = "text-align: right;">
